@@ -31,10 +31,11 @@ var_export(false === 0); //неправильно
 echo '</br></br>';
 
 echo 'Какая строка длиннее three - три </br>';
-var_dump('three'); //5
-var_dump('три'); //6
+echo mb_strlen('three'); //5
 echo '</br>';
-echo 'Вторая строка длиннее </br></br>';
+echo mb_strlen('три'); //3
+echo '</br>';
+echo 'Перая строка длиннее </br></br>';
 
 echo 'Какое число больше 125 умножить на 13 плюс 7 или 223 плюс 28 умножить 2 </br>';
 var_export(125 * 13 + 7); //1632
