@@ -38,10 +38,13 @@ $secondArr = [
 
 //найти все элементы которые отсутствуют в первом массиве и присутствуют во втором
 var_export(array_diff_assoc($secondArr, $firstArr)); //array ( 'seven' => 22, 'three' => 32, 'five' => 13, 'six' => 37, )
+
 //найти все элементы которые присутствую в первом и отсутствуют во втором
 var_export(array_diff_assoc($firstArr, $secondArr)); //array ( 'two' => 2, 'three' => 3, 'five' => 12, )
+
 //найти все элементы значения которых совпадают
 var_export(array_intersect_assoc($firstArr, $secondArr)); //array ( 'one' => 1, 'four' => 5, )
+
 //найти все элементы значения которых отличается
 function searchArrDifKeys ($arr1, $arr2) {
     $result = [];
