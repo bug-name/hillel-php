@@ -37,13 +37,16 @@ $secondArr = [
 ];
 
 //найти все элементы которые отсутствуют в первом массиве и присутствуют во втором
-var_export(array_diff_assoc($secondArr, $firstArr)); //array ( 'seven' => 22, 'three' => 32, 'five' => 13, 'six' => 37, )
+var_export(array_diff_assoc($secondArr, $firstArr));
+//array ( 'seven' => 22, 'three' => 32, 'five' => 13, 'six' => 37, )
 
 //найти все элементы которые присутствую в первом и отсутствуют во втором
-var_export(array_diff_assoc($firstArr, $secondArr)); //array ( 'two' => 2, 'three' => 3, 'five' => 12, )
+var_export(array_diff_assoc($firstArr, $secondArr));
+//array ( 'two' => 2, 'three' => 3, 'five' => 12, )
 
 //найти все элементы значения которых совпадают
-var_export(array_intersect_assoc($firstArr, $secondArr)); //array ( 'one' => 1, 'four' => 5, )
+var_export(array_intersect_assoc($firstArr, $secondArr));
+//array ( 'one' => 1, 'four' => 5, )
 
 //найти все элементы значения которых отличается
 function searchArrDifKeys ($arr1, $arr2) {
@@ -60,7 +63,9 @@ function searchArrDifKeys ($arr1, $arr2) {
     }
     return $result;
 }
-var_export(searchArrDifKeys ($firstArr, $secondArr)); // С ОДИНАКОВЫМИ КЛЮЧАМИ array ( 'three' => 3, 'three_pare' => 32, 'five' => 12, 'five_pare' => 13, )
+var_export(searchArrDifKeys ($firstArr, $secondArr));
+// С ОДИНАКОВЫМИ КЛЮЧАМИ array ( 'three' => 3, 'three_pare' => 32, 'five' => 12, 'five_pare' => 13, )
+
 function searchArrDif ($arr1, $arr2) {
     $result = [];
     $arrDifs1 = array_diff_assoc($arr1, $arr2);
@@ -73,7 +78,8 @@ function searchArrDif ($arr1, $arr2) {
     }
     return $result;
 }
-var_export(searchArrDif ($firstArr, $secondArr)); // array ( 0 => 2, 1 => 3, 2 => 12, 3 => 22, 4 => 32, 5 => 13, 6 => 37, )
+var_export(searchArrDif ($firstArr, $secondArr));
+// array ( 0 => 2, 1 => 3, 2 => 12, 3 => 22, 4 => 32, 5 => 13, 6 => 37, )
 
 $firstArr = [
     'one' => 1,
@@ -104,7 +110,7 @@ function arrNestedSecond($arr) {
     }
     return $result;
 }
-var_export(arrNestedSecond($firstArr)); array ( 0 => 22, 1 => 2, 2 => 5, );
+var_export(arrNestedSecond($firstArr)); //array ( 0 => 22, 1 => 2, 2 => 5, );
 
 //получить общее количество элементов в массиве
 function countFlatArr($arr) {
