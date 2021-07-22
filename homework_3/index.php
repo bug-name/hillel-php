@@ -12,11 +12,11 @@ for ($i = 0; $i < 4; $i++) {
 var_export($arr); //array ( 0 => 31, 1 => 4, 2 => 1, 3 => 8, 4 => 6, 5 => 1, 6 => 2, 7 => 3, 8 => 7, )
 
 //получить сумму 4,5,6 элемента
-$arr1Sum = 0;
+$arrSum1 = 0;
 for ($i = 3; $i < 6; $i++) {
-    $arr1Sum += $arr[$i];
+    $arrSum1 += $arr[$i];
 }
-echo $arr1Sum; // 15
+echo $arrSum1; // 15
 
 
 $firstArr = [
