@@ -43,6 +43,7 @@ function sumFlatArr($arr) {
         }
     }
     return $sum;
+
 }
 var_export(sumFlatArr($arr)); // 8
 
