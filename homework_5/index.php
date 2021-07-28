@@ -49,7 +49,7 @@ var_export(sumFlatArr($arr)); // 8
 //Создать функцию которая определит
 //сколько квадратов меньшего размера можно
 //вписать в квадрат большего размера размер возвращать в float
-$square1 = 2;
+$square1 = 3;
 $square2 = 2;
 function squaresPlacement($square1, $square2) {
     $size1 = pow($square1, 2);
