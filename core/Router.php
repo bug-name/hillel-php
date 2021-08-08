@@ -2,7 +2,10 @@
 
 namespace Core;
 
-use App\SecondClass;
+use App\Index;
+use App\About;
+use App\Gallery;
+use App\Page404;
 
 final class Router
 {
@@ -15,17 +18,22 @@ final class Router
 
     public function run()
     {
-        if ($this->href) {
-            $classNamespace = 'App\\' . ucfirst(ltrim($this->href, '/'));
+        $classNamespace = ltrim($this->href, '/');
 
-            if (class_exists($classNamespace)) {
-                $classObj = new $classNamespace;
-            } else {
-                $classObj = new SecondClass();
-            }
-        } else {
-            $classObj = new SecondClass();
+        switch ($classNamespace) {
+            case '':
+                $runController = new Index();
+                break;
+            case 'about':
+                $runController = new About();
+                break;
+            case 'gallery':
+                $runController = new Gallery();
+                break;
+            default:
+                $runController = new Page404();
         }
-        $classObj->index();
+
+        $runController->index();
     }
 }
