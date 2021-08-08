@@ -1,11 +1,11 @@
 <?php
 
 require_once 'vendor/autoload.php';
+use Core\Router;
 
-$appleObj = new \App\Apple('red');
-$secondObj = new \App\SecondClass();
-echo $appleObj->color;
-echo $secondObj->param1;
+$router = new Router();
+$router->run();
+
 
 
 

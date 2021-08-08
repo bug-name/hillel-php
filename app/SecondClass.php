@@ -4,5 +4,7 @@ namespace App;
 
 class SecondClass
 {
-    public $param1 = 25;
+    public function index() {
+        print_r('Second Class');
+    }
 }
