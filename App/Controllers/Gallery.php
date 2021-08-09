@@ -1,11 +1,11 @@
 <?php
-    namespace App;
+    namespace Controllers;
 
     class Gallery
     {
-        public function index()
+        public function __construct()
         {
             echo 'Gallery';
         }
     }
-?>
+

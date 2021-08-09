@@ -2,38 +2,40 @@
 
 namespace Core;
 
-use App\Index;
-use App\About;
-use App\Gallery;
-use App\Page404;
+use Controllers\Index;
+use Controllers\Page404;
 
 final class Router
 {
     private $href;
+    private $namespace;
+    private $param;
 
     public function __construct()
     {
         $this->href = $_SERVER["PATH_INFO"];
+        $this->href = rtrim($this->href, '/');
+        $this->href = explode('/', $this->href);
     }
 
     public function run()
     {
-        $classNamespace = ltrim($this->href, '/');
-
-        switch ($classNamespace) {
-            case '':
-                $runController = new Index();
-                break;
-            case 'about':
-                $runController = new About();
-                break;
-            case 'gallery':
-                $runController = new Gallery();
-                break;
-            default:
-                $runController = new Page404();
+        if (isset($this->href[1])){
+            $this->namespace = 'Controllers\\' . ucfirst($this->href[1]);
+            if (class_exists($this->namespace)) {
+                $controllerObj = new $this->namespace;
+                if (isset($this->href[2])) {
+                    $this->param = $this->href[2];
+                    $functionName = $this->param;
+                    $controllerObj->$functionName();
+                }
+                $this->param = $this->href[2];
+            } else {
+                $controllerObj = new Page404();
+            }
+        } else {
+            $controllerObj = new Index();
         }
-
-        $runController->index();
     }
+
 }

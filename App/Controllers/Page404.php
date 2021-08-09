@@ -1,12 +1,11 @@
 <?php
-
-    namespace App;
+    namespace Controllers;
 
     class Page404
     {
-        public function index()
+        public function __construct()
         {
             echo '404';
         }
     }
-?>
+

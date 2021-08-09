@@ -12,9 +12,9 @@
 
   "autoload": {
     "psr-4": {
-      "App\\": "app/",
-      "Core\\": "core/",
-      "Components\\": "components/"
+      "App\\": "App/",
+      "Controllers\\": "App/Controllers",
+      "Core\\": "core/"
     }
   },
   "require": {

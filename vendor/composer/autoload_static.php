@@ -10,7 +10,7 @@ class ComposerStaticInitb34662914de26731a593832fdb3c014b
         'C' => 
         array (
             'Core\\' => 5,
-            'Components\\' => 11,
+            'Controllers\\' => 12,
         ),
         'A' => 
         array (
@@ -23,19 +23,22 @@ class ComposerStaticInitb34662914de26731a593832fdb3c014b
         array (
             0 => __DIR__ . '/../..' . '/core',
         ),
-        'Components\\' => 
+        'Controllers\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/components',
+            0 => __DIR__ . '/../..' . '/App/Controllers',
         ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 
     public static $classMap = array (
-        'App\\Apple' => __DIR__ . '/../..' . '/app/Apple.php',
-        'App\\SecondClass' => __DIR__ . '/../..' . '/app/SecondClass.php',
+        'Controllers\\About' => __DIR__ . '/../..' . '/App/Controllers/About.php',
+        'Controllers\\Gallery' => __DIR__ . '/../..' . '/App/Controllers/Gallery.php',
+        'Controllers\\Index' => __DIR__ . '/../..' . '/App/Controllers/Index.php',
+        'Controllers\\Page404' => __DIR__ . '/../..' . '/App/Controllers/Page404.php',
+        'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

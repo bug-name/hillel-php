@@ -1,12 +1,11 @@
 <?php
-
-    namespace App;
+    namespace Controllers;
 
     class Index
     {
-        public function index()
+        public function __construct()
         {
             echo 'index';
         }
     }
-?>
+
