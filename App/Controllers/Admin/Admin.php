@@ -8,6 +8,6 @@ class Admin
 {
     public function __construct()
     {
-        ViewAdmin::view('admin');
+        ViewAdmin::view('Admin');
     }
 }

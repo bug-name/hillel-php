@@ -25,34 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="lesson_10">
-      <change afterPath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/ViewAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home/About.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home/Gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home/Page404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/AbstractController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Page404.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Page404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/ViewHome.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/About.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Gallery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Page404.php" beforeDir="false" />
+    <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="homework_10">
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +113,7 @@
       <workItem from="1628530767197" duration="12040000" />
       <workItem from="1628612096121" duration="127000" />
       <workItem from="1628612224528" duration="5594000" />
-      <workItem from="1628704635330" duration="6813000" />
+      <workItem from="1628704635330" duration="7002000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1626293123924</created>
@@ -302,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628704913009</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="homework_10">
+      <created>1628711698362</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1628711698362</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +324,8 @@
     <MESSAGE value="lesson_8" />
     <MESSAGE value="lesson_9" />
     <MESSAGE value="lesson_10" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson_10" />
+    <MESSAGE value="homework_10" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework_10" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1205" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628448034165">
@@ -378,10 +360,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="922" y="142" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1628442314182" />
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1628704919995">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1628711700791">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1628704919995" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1628711700791" />
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1628446591917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
