@@ -7,38 +7,48 @@ namespace Composer\Autoload;
 class ComposerStaticInitb34662914de26731a593832fdb3c014b
 {
     public static $prefixLengthsPsr4 = array (
+        'H' => 
+        array (
+            'Home\\' => 5,
+        ),
         'C' => 
         array (
             'Core\\' => 5,
-            'Controllers\\' => 12,
         ),
         'A' => 
         array (
             'App\\' => 4,
+            'Admin\\' => 6,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Home\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Controllers/Home',
+        ),
         'Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/core',
-        ),
-        'Controllers\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/App/Controllers',
         ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App',
         ),
+        'Admin\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/App/Controllers/Admin',
+        ),
     );
 
     public static $classMap = array (
-        'Controllers\\About' => __DIR__ . '/../..' . '/App/Controllers/About.php',
-        'Controllers\\Gallery' => __DIR__ . '/../..' . '/App/Controllers/Gallery.php',
-        'Controllers\\Index' => __DIR__ . '/../..' . '/App/Controllers/Index.php',
-        'Controllers\\Page404' => __DIR__ . '/../..' . '/App/Controllers/Page404.php',
+        'Admin\\Admin' => __DIR__ . '/../..' . '/App/Controllers/Admin/Admin.php',
         'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'Core\\ViewAdmin' => __DIR__ . '/../..' . '/core/ViewAdmin.php',
+        'Core\\ViewHome' => __DIR__ . '/../..' . '/core/ViewHome.php',
+        'Home\\About' => __DIR__ . '/../..' . '/App/Controllers/Home/About.php',
+        'Home\\Gallery' => __DIR__ . '/../..' . '/App/Controllers/Home/Gallery.php',
+        'Home\\Index' => __DIR__ . '/../..' . '/App/Controllers/Home/Index.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

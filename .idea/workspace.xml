@@ -25,16 +25,34 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="lesson_9">
-      <change afterPath="$PROJECT_DIR$/App/Controllers/AbstractController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/About.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Page404.php" afterDir="false" />
+    <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="lesson_10">
+      <change afterPath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/ViewAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/admin/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/home/About.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/home/Gallery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/home/Page404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/About.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/AbstractController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Page404.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Page404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/ViewHome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/About.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Gallery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Page404.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +90,15 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\hillel-php\web\home" />
+      <recent name="C:\OpenServer\domains\hillel-php\App\Controllers\Home" />
+      <recent name="C:\OpenServer\domains\hillel-php\web\Home" />
+      <recent name="C:\OpenServer\domains\hillel-php\App\Controllers\Admin" />
+      <recent name="C:\OpenServer\domains\hillel-php\App\Controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\hillel-php\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\hillel-php\App\Controllers" />
-      <recent name="C:\OpenServer\domains\hillel-php" />
-      <recent name="C:\OpenServer\domains\hillel-php\vendor" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -119,6 +139,7 @@
       <workItem from="1628530767197" duration="12040000" />
       <workItem from="1628612096121" duration="127000" />
       <workItem from="1628612224528" duration="5594000" />
+      <workItem from="1628704635330" duration="6813000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1626293123924</created>
@@ -274,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628612260442</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="lesson_10">
+      <created>1628704913009</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1628704913009</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,21 +342,26 @@
     <MESSAGE value="homework_6" />
     <MESSAGE value="lesson_8" />
     <MESSAGE value="lesson_9" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson_9" />
+    <MESSAGE value="lesson_10" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson_10" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1205" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628448034165">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1205" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1628448034165" />
-    <state x="1252" y="476" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1628617061129">
+    <state x="1252" y="476" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1628710844695">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1252" y="476" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628617061129" />
-    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1628617581269">
+    <state x="1252" y="476" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628710844695" />
+    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1628710498529">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628617581269" />
+    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628710498529" />
+    <state x="736" y="437" key="ComposerInitDialogKey" timestamp="1628711301756">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="736" y="437" key="ComposerInitDialogKey/0.0.1920.1050@0.0.1920.1050" timestamp="1628711301756" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1628612222034">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -337,26 +370,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="848" y="392" width="389" height="265" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628612274166" />
-    <state x="1240" y="450" key="NewPhpClassDialog" timestamp="1628616963379">
+    <state x="1240" y="450" key="NewPhpClassDialog" timestamp="1628706926491">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1240" y="450" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628616963379" />
+    <state x="1240" y="450" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628706926491" />
     <state x="922" y="142" key="SettingsEditor" timestamp="1628442314182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="922" y="142" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1628442314182" />
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1628543819223">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1628704919995">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1628543819223" />
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1628704919995" />
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1628446591917">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628446591917" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628612266239">
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628705327380">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1628612266239" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050@0.0.1920.1050" timestamp="1628705327380" />
     <state x="740" y="237" key="git4idea.branch.GitSmartOperationDialog" timestamp="1628448052735">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

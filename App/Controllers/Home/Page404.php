@@ -1,11 +1,13 @@
 <?php
-    namespace Controllers;
+    namespace Home;
+
+    use Core\ViewHome;
 
     class Page404
     {
         public function __construct()
         {
-            echo '404';
+            ViewHome::view('Page404');
         }
     }
 

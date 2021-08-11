@@ -2,14 +2,12 @@
 
 namespace Core;
 
-use Controllers\Index;
-use Controllers\Page404;
+use Home\Page404;
+use Home\Index;
 
 final class Router
 {
     private $href;
-    private $namespace;
-    private $param;
 
     public function __construct()
     {
@@ -21,18 +19,32 @@ final class Router
     public function run()
     {
         if (isset($this->href[1])){
-            $this->namespace = 'Controllers\\' . ucfirst($this->href[1]);
-            if (class_exists($this->namespace)) {
-                $controllerObj = new $this->namespace;
+
+            if (ucfirst($this->href[1]) === 'Admin'){
+                $namespace = 'Admin\\' . ucfirst($this->href[1]);
+            } else {
+                $namespace = 'Home\\' . ucfirst($this->href[1]);
+            }
+
+            if (class_exists($namespace)) {
+
+                $controllerObj = new $namespace;
+
                 if (isset($this->href[2])) {
-                    $this->param = $this->href[2];
-                    $functionName = $this->param;
-                    $controllerObj->$functionName();
+
+                    $param = $this->href[2];
+                    $functionName = $param;
+
+                    if (method_exists($controllerObj, $functionName)) {
+                        $controllerObj->$functionName();
+                    }
+
                 }
-                $this->param = $this->href[2];
+
             } else {
                 $controllerObj = new Page404();
             }
+
         } else {
             $controllerObj = new Index();
         }

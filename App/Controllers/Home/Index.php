@@ -1,7 +1,7 @@
 <?php
-    namespace Controllers;
+    namespace Home;
 
-    use Core\View;
+    use Core\ViewHome;
 
     class Index
     {
@@ -11,7 +11,7 @@
         ];
         public function __construct()
         {
-            View::view('Index', $this->arrData);
+            ViewHome::view('Index', $this->arrData);
         }
     }
 

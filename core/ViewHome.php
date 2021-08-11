@@ -4,10 +4,10 @@
 namespace Core;
 
 
-class View
+class ViewHome
 {
     public static function view($name, $data = null)
     {
-        require 'web/' . $name . '.php';
+        require 'web/home/' . $name . '.php';
     }
 }
