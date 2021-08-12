@@ -1,5 +1,5 @@
 <?php
-    namespace Home;
+    namespace Controllers\Home;
 
     use Core\ViewHome;
 

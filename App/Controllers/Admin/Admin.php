@@ -1,6 +1,6 @@
 <?php
 
-namespace Admin;
+namespace Controllers\Admin;
 
 use Core\ViewAdmin;
 

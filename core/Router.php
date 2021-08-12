@@ -2,8 +2,9 @@
 
 namespace Core;
 
-use Home\Page404;
-use Home\Index;
+
+use Controllers\Home\Index;
+use Controllers\Home\Page404;
 
 final class Router
 {
@@ -21,9 +22,9 @@ final class Router
         if (isset($this->href[1])){
 
             if (ucfirst($this->href[1]) === 'Admin'){
-                $namespace = 'Admin\\' . ucfirst($this->href[1]);
+                $namespace = 'Controllers\\Admin\\' . ucfirst($this->href[1]);
             } else {
-                $namespace = 'Home\\' . ucfirst($this->href[1]);
+                $namespace = 'Controllers\\Home\\' . ucfirst($this->href[1]);
             }
 
             if (class_exists($namespace)) {
