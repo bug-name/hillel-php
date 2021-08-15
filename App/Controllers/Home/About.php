@@ -1,13 +1,14 @@
 <?php
-    namespace Controllers;
 
-    use Core\View;
+    namespace Controllers\Home;
+
+    use Core\ViewHome;
 
     class About
     {
         public function __construct()
         {
-            View::view('About');
+            ViewHome::view('About');
         }
 
         public function other()

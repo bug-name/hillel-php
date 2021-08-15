@@ -1,11 +1,13 @@
 <?php
-    namespace Controllers;
+    namespace Controllers\Home;
+
+    use Core\ViewHome;
 
     class Gallery
     {
         public function __construct()
         {
-            echo 'Gallery';
+            ViewHome::view('Gallery');
         }
     }
 

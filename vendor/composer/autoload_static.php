@@ -34,11 +34,9 @@ class ComposerStaticInitb34662914de26731a593832fdb3c014b
     );
 
     public static $classMap = array (
-        'Controllers\\About' => __DIR__ . '/../..' . '/App/Controllers/About.php',
-        'Controllers\\Gallery' => __DIR__ . '/../..' . '/App/Controllers/Gallery.php',
-        'Controllers\\Index' => __DIR__ . '/../..' . '/App/Controllers/Index.php',
-        'Controllers\\Page404' => __DIR__ . '/../..' . '/App/Controllers/Page404.php',
         'Core\\Router' => __DIR__ . '/../..' . '/core/Router.php',
+        'Core\\ViewAdmin' => __DIR__ . '/../..' . '/core/ViewAdmin.php',
+        'Core\\ViewHome' => __DIR__ . '/../..' . '/core/ViewHome.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
