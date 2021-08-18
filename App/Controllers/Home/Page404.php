@@ -1,13 +1,13 @@
 <?php
     namespace Controllers\Home;
 
-    use Core\ViewHome;
+    use Controllers\AbstractController;
 
-    class Page404
+    class Page404 extends AbstractController
     {
         public function __construct()
         {
-            ViewHome::view('Page404');
+            $this->view('Home', 'Page404', 'Page404');
         }
     }
 

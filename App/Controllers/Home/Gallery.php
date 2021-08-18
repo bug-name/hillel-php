@@ -1,13 +1,15 @@
 <?php
     namespace Controllers\Home;
 
-    use Core\ViewHome;
+    use Controllers\AbstractController;
 
-    class Gallery
+    class Gallery extends AbstractController
     {
         public function __construct()
         {
-            ViewHome::view('Gallery');
+            $modelClass = new \App\Model\Gallery();
+            $titles = $modelClass->list();
+            $this->view('Home', 'Gallery', $titles);
         }
     }
 

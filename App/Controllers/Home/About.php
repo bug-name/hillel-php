@@ -1,22 +1,21 @@
 <?php
-
     namespace Controllers\Home;
 
-    use Core\ViewHome;
+    use Controllers\AbstractController;
 
-    class About
+    class About extends AbstractController
     {
         public function __construct()
         {
             $modelClass = new \App\Model\About();
             $titles = $modelClass->list();
-            ViewHome::view('About', $titles);
+            $this->view('Home', 'About', $titles);
         }
 
         public function other()
         {
             $modelClass = new \App\Model\About();
             $title = $modelClass->getAboutByTitle('title1');
-            ViewHome::view('AboutOther', $title);
+            $this->view('Home', 'AboutOther', $title);
         }
     }

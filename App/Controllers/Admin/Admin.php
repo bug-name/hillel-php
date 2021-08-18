@@ -1,13 +1,14 @@
 <?php
+    namespace Controllers\Admin;
 
-namespace Controllers\Admin;
+    use Controllers\AbstractController;
 
-use Core\ViewAdmin;
-
-class Admin
-{
-    public function __construct()
+    class Admin extends AbstractController
     {
-        ViewAdmin::view('Admin');
+        public function __construct()
+        {
+            $modelClass = new \App\Model\Admin();
+            $titles = $modelClass->list();
+            $this->view('Admin','Admin', $titles);
+        }
     }
-}

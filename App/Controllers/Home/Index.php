@@ -1,17 +1,15 @@
 <?php
     namespace Controllers\Home;
 
-    use Core\ViewHome;
+    use Controllers\AbstractController;
 
-    class Index
+    class Index extends AbstractController
     {
-        public $arrData = [
-            "Name" => "Ivan",
-            "Age" => "30",
-        ];
         public function __construct()
         {
-            ViewHome::view('Index', $this->arrData);
+            $modelClass = new \App\Model\Index();
+            $titles = $modelClass->list();
+            $this->view('Home','Index', $titles);
         }
     }
 

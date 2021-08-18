@@ -20,6 +20,7 @@ final class Router
     public function run()
     {
         if (isset($this->href[1])){
+            $namespace = '';
 
             if (ucfirst($this->href[1]) === 'Admin'){
                 $namespace = 'Controllers\\Admin\\' . ucfirst($this->href[1]);
