@@ -26,21 +26,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="homework_10">
+      <change afterPath="$PROJECT_DIR$/App/Model/About.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/AbstractModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/Gallery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/home/AboutOther.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]2/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40__Default_Changelist_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40__Default_Changelist_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Controllers/Home/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Home/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Home/Page404.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Page404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/About.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/Index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +128,7 @@
       <workItem from="1628612224528" duration="5594000" />
       <workItem from="1628704635330" duration="7002000" />
       <workItem from="1628791642708" duration="561000" />
+      <workItem from="1629306082598" duration="383000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1626293123924</created>
@@ -377,10 +377,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="848" y="392" width="389" height="265" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628612274166" />
-    <state x="1240" y="450" key="NewPhpClassDialog" timestamp="1628706926491">
+    <state x="1240" y="450" key="NewPhpClassDialog" timestamp="1629218010792">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1240" y="450" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628706926491" />
+    <state x="1240" y="450" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1629218010792" />
     <state x="922" y="142" key="SettingsEditor" timestamp="1628442314182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

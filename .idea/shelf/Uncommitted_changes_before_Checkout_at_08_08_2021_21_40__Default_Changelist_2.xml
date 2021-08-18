@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]2" date="1628448054249" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]2/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 08.08.2021 21:40 [Default Changelist]" />
-  <binary>
-    <option name="BEFORE_PATH" />
-    <option name="AFTER_PATH" value="vendor/composer/LICENSE" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]2/LICENSE" />
-  </binary>
-</changelist>
