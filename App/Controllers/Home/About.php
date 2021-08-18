@@ -8,11 +8,15 @@
     {
         public function __construct()
         {
-            ViewHome::view('About');
+            $modelClass = new \App\Model\About();
+            $titles = $modelClass->list();
+            ViewHome::view('About', $titles);
         }
 
         public function other()
         {
-            echo 'About other';
+            $modelClass = new \App\Model\About();
+            $title = $modelClass->getAboutByTitle('title1');
+            ViewHome::view('AboutOther', $title);
         }
     }
