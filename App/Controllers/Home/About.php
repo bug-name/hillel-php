@@ -5,17 +5,24 @@
 
     class About extends AbstractController
     {
+
+        private $modelClass;
+
         public function __construct()
         {
-            $modelClass = new \App\Model\About();
-            $titles = $modelClass->list();
+            $this->modelClass = new \App\Model\About();
+        }
+
+        public function index()
+        {
+            $titles = $this->modelClass->list();
             $this->view('Home', 'About', $titles);
         }
 
         public function other()
         {
-            $modelClass = new \App\Model\About();
-            $title = $modelClass->getAboutByTitle('title1');
+            $title = $this->modelClass->getAboutByTitle('title1');
             $this->view('Home', 'AboutOther', $title);
         }
+
     }

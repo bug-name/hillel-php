@@ -20,7 +20,6 @@ final class Router
     public function run()
     {
         if (isset($this->href[1])){
-            $namespace = '';
 
             if (ucfirst($this->href[1]) === 'Admin'){
                 $namespace = 'Controllers\\Admin\\' . ucfirst($this->href[1]);
@@ -39,8 +38,12 @@ final class Router
 
                     if (method_exists($controllerObj, $functionName)) {
                         $controllerObj->$functionName();
+                    } else {
+                        $controllerObj = new Page404();
                     }
 
+                } else {
+                    $controllerObj->index();
                 }
 
             } else {
@@ -49,6 +52,7 @@ final class Router
 
         } else {
             $controllerObj = new Index();
+            $controllerObj->index();
         }
     }
 

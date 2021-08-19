@@ -5,10 +5,15 @@
 
     class Admin extends AbstractController
     {
+        private $modelClass;
+
         public function __construct()
         {
-            $modelClass = new \App\Model\Admin();
-            $titles = $modelClass->list();
+            $this->modelClass = new \App\Model\Admin();
+        }
+
+        public function index() {
+            $titles = $this->modelClass->list();
             $this->view('Admin','Admin', $titles);
         }
     }
