@@ -26,19 +26,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="homework_10">
-      <change afterPath="$PROJECT_DIR$/App/Model/About.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Model/AbstractModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Model/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/Model/Gallery.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/home/AboutOther.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]2/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40_[Default_Changelist]2/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_08_2021_21_40__Default_Changelist_2.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Controllers/AbstractController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Model/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Admin/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Controllers/Home/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/home/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/About.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Home/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Controllers/Home/Page404.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Page404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Model/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/About.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Model/AbstractModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/AbstractModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Model/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Model/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/Gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ViewAdmin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ViewHome.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/admin/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home/Gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/Gallery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/Index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,19 +77,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/App/Model" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\hillel-php\App\Model" />
+      <recent name="C:\OpenServer\domains\hillel-php\core" />
+      <recent name="C:\OpenServer\domains\hillel-php\app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\hillel-php\Config" />
       <recent name="C:\OpenServer\domains\hillel-php\web\home" />
       <recent name="C:\OpenServer\domains\hillel-php\App\Controllers\Home" />
       <recent name="C:\OpenServer\domains\hillel-php\web\Home" />
       <recent name="C:\OpenServer\domains\hillel-php\App\Controllers\Admin" />
-      <recent name="C:\OpenServer\domains\hillel-php\App\Controllers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\hillel-php\app" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -350,7 +356,8 @@
     <MESSAGE value="lesson_9" />
     <MESSAGE value="lesson_10" />
     <MESSAGE value="homework_10" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework_10" />
+    <MESSAGE value="lesson_12" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson_12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1205" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1628448034165">
@@ -361,26 +368,26 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1252" y="476" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628710844695" />
-    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1628710498529">
+    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1629309729036">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628710498529" />
+    <state x="1170" y="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1629309729036" />
     <state x="736" y="437" key="ComposerInitDialogKey" timestamp="1628711301756">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="736" y="437" key="ComposerInitDialogKey/0.0.1920.1050@0.0.1920.1050" timestamp="1628711301756" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1628612222034">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1629310367251">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1628612222034" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1629310367251" />
     <state x="848" y="392" width="389" height="265" key="MultipleFileMergeDialog" timestamp="1628612274166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="848" y="392" width="389" height="265" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628612274166" />
-    <state x="1240" y="450" key="NewPhpClassDialog" timestamp="1629218010792">
+    <state x="1240" y="450" key="NewPhpClassDialog" timestamp="1629312661031">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="1240" y="450" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1629218010792" />
+    <state x="1240" y="450" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1629312661031" />
     <state x="922" y="142" key="SettingsEditor" timestamp="1628442314182">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
