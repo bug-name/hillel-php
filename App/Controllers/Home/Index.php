@@ -14,7 +14,7 @@
 
         public function index()
         {
-            $titles = $this->modelClass->list();
+            $titles = $this->modelClass->getAllTitles();
             $this->view('Home','Index', $titles);
         }
     }
