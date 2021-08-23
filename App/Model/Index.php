@@ -2,11 +2,23 @@
 
 namespace App\Model;
 
+use Common\Database\DbConnector;
+
 class Index extends AbstractModel
 {
-    public $titles = [
-        'title1' => 'First main title',
-        'title2' => 'Second main title',
-        'title3' => 'Third main title',
-    ];
+
+    private $dbConnect;
+
+    public function __construct()
+    {
+        $connector = new DbConnector();
+        $this->dbConnect = $connector->connect();
+    }
+
+    public function getAllTitles()
+    {
+        $sql = 'SELECT * FROM main;';
+        $result = $this->dbConnect->query($sql);
+        return $result->fetchAll();
+    }
 }
