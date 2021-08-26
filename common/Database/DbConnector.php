@@ -1,6 +1,7 @@
 <?php
 
 namespace Common\Database;
+use PDO;
 
 class DbConnector
 {
@@ -25,6 +26,8 @@ class DbConnector
 
     public function connect()
     {
-        return new \PDO($this->dns, $this->user, $this->password);
+        $connection = new \PDO($this->dns, $this->user, $this->password);
+        $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+        return $connection;
     }
 }

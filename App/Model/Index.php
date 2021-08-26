@@ -17,7 +17,7 @@ class Index extends AbstractModel
 
     public function getAllTitles()
     {
-        $sql = 'SELECT * FROM main;';
+        $sql = 'SELECT title FROM main;';
         $result = $this->dbConnect->query($sql);
         return $result->fetchAll();
     }

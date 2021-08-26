@@ -25,17 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="homework_10">
-      <change afterPath="$PROJECT_DIR$/common/Database/DbConnector.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/db-config.php" afterDir="false" />
+    <list default="true" id="1ada101f-cd7f-4d9a-82f3-cd982dc1c051" name="Default Changelist" comment="merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Controllers/Home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Controllers/Home/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Model/AbstractModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/AbstractModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Model/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/App/Model/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/Database/DbConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/Database/DbConnector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/home/Index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +123,8 @@
       <workItem from="1629306082598" duration="383000" />
       <workItem from="1629495094177" duration="1654000" />
       <workItem from="1629622077972" duration="66000" />
+      <workItem from="1630001170542" duration="1790000" />
+      <workItem from="1630002975952" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1626293123924</created>
