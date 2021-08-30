@@ -3,6 +3,7 @@
 namespace App\Model;
 
 use Common\Database\DbConnector;
+use Common\Database\DbSelect;
 
 class Index extends AbstractModel
 {
@@ -17,8 +18,9 @@ class Index extends AbstractModel
 
     public function getAllTitles()
     {
-        $sql = 'SELECT * FROM main INNER JOIN post on main.id = post.home_id';
-        $result = $this->dbConnect->query($sql);
+        $selectObj = new DbSelect();
+        $selectStr = $selectObj->SelectString('main', '*', 'INNER JOIN', 'post', 'main.id', 'post.main_id');
+        $result = $this->dbConnect->query($selectStr);
         return $result->fetchAll();
     }
 }
