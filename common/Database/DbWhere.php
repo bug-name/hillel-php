@@ -20,35 +20,28 @@ class DbWhere extends DbConnector
         $this->where[] = ['or' => $where];
     }
 
-    public function likeWhere($where)
-    {
-        $this->where[] = ['like' => $where];
-    }
-
     public function getWhere()
     {
+        $whereStr = '';
         if (empty($this->where)) {
             return null;
         } else if (is_string($this->where)) {
             return $this->where;
         } else if (is_array($this->where)) {
-            foreach ($this->where as $value) {
-                if ($value == 'like') {
-
+            foreach ($this->where as $key => $value) {
+                if ($key == 'like') {
+                    foreach ($value as $key2 => $value2) {
+                        $whereStr .= trim($key) . ' = ' . trim($value);
+                    }
+                    return $whereStr;
                 }
-                $data[] = trim($key) . ' = ' . trim($value);
+                $whereStr .= trim($key) . ' = ' . trim($value);
             }
         } else {
             throw new Exception('incorrect where param');
         }
+        return $whereStr;
     }
 
 }
-//'id = 5'
-//[
-//[
-//    'id' => 1,
-//    'litle' => 'teset',
-//]
-//['like', ['columnName', 'value']]
 
