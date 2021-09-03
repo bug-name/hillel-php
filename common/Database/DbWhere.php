@@ -31,7 +31,7 @@ class DbWhere extends DbConnector
             foreach ($this->where as $key => $value) {
                 if ($key == 'like') {
                     foreach ($value as $key2 => $value2) {
-                        $whereStr .= trim($key) . ' = ' . trim($value);
+                        $whereStr .= 'LIKE '. trim($key) . '%' . trim($value).'%';
                     }
                     return $whereStr;
                 }

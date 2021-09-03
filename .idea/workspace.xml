@@ -61,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Fenix/good-casting" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -128,7 +128,8 @@
       <workItem from="1630086380747" duration="1481000" />
       <workItem from="1630518689340" duration="7000" />
       <workItem from="1630519683752" duration="312000" />
-      <workItem from="1630672436742" duration="749000" />
+      <workItem from="1630672436742" duration="1229000" />
+      <workItem from="1630681410241" duration="724000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1626293123924</created>
@@ -305,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630610805425</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="homework_15">
+      <created>1630673201032</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1630673201032</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,10 +390,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="736" y="437" key="ComposerInitDialogKey/0.0.1920.1050@0.0.1920.1050" timestamp="1628711301756" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1629622140756">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1630681424293">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1629622140756" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1630681424293" />
     <state x="848" y="392" width="389" height="265" key="MultipleFileMergeDialog" timestamp="1628612274166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -398,14 +406,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="922" y="142" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1629495130530" />
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1630610808021">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1630673203742">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1630610808021" />
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1628446591917">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1630673203742" />
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1630682135603">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1628446591917" />
+    <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1630682135603" />
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630609578640">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
